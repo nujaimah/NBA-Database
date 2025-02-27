@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?> <NBAplayerData>
+<player>
+<playerID>1</playerID>
+<first_name>Pascal</first_name> <last_name>Siakam</last_name> <birth_place>Cameroon</birth_place>
+<birthday>April 2 1994</birthday>
+<height>6 ft 8</height>
+<college_attended>New Mexico State</college_attended> <experience>6</experience>
+<team_name>Toronto Raptors</team_name> <position_name>Power Forward</position_name> <age>28</age>
+<statsID>1</statsID>
+</player>
+<player>
+<playerID>2</playerID> <first_name>Kyle</first_name> <last_name>Lowry</last_name> <birth_place>USA</birth_place> <birthday>March 25 1986</birthday>
+<height>6 ft 0</height> <college_attended>Villanova</college_attended> <experience>16</experience> <team_name>Miami Heat</team_name> <position_name>Point Guard</position_name> <age>36</age>
+<statsID>2</statsID>
+ </player>
+<player>
+<playerID>3</playerID>
+<first_name>Demar</first_name> <last_name>Derozan</last_name> <birth_place>USA</birth_place>
+<birthday>August 7 1989</birthday>
+<height>6 ft 6</height>
+<college_attended>Southern California</college_attended> <experience>13</experience>
+<team_name>Chicago Bulls</team_name> <position_name>Power Forward</position_name> <age>33</age>
+<statsID>3</statsID>
+</player>
+<player>
+<playerID>4</playerID> <first_name>Lebron</first_name> <last_name>James</last_name> <birth_place>USA</birth_place>
+<birthday>December 30 1984</birthday>
+<height>6 ft 9</height>
+<college_attended>St. Vincent Mary</college_attended> <experience>19</experience>
+<team_name>Los Angeles Lakers</team_name> <position_name>Shooting Guard</position_name> <age>38</age>
+<statsID>4</statsID>
+</player>
+<player>
+<playerID>5</playerID> <first_name>Scottie</first_name> <last_name>Barnes</last_name> <birth_place>USA</birth_place>
+<birthday>August 1 2001</birthday>
+<height>6 ft 8</height>
+<college_attended>Florida State</college_attended> <experience>1</experience>
+<team_name>Toronto Raptors</team_name> <position_name>Small Forward</position_name> <age>21</age>
+
+ <statsID>5</statsID> </player>
+<team>
+<team_name>Toronto Raptors</team_name> <year_created>1995</year_created> <no_of_championships>1</no_of_championships> <stadium_name>Scotiabank Arena</stadium_name>
+</team>
+<team>
+<team_name>Chicago Bulls</team_name> <year_created>1966</year_created> <no_of_championships>6</no_of_championships> <stadium_name>United Center</stadium_name>
+</team>
+<team>
+<team_name>Los Angeles Lakers</team_name> <year_created>1948</year_created> <no_of_championships>17</no_of_championships> <stadium_name>Crypto.com Arena</stadium_name>
+</team>
+<team>
+<team_name>Boston Celtics</team_name> <year_created>1946</year_created> <no_of_championships>17</no_of_championships> <stadium_name>TD Garden</stadium_name>
+</team>
+<team>
+<team_name>Miami Heat</team_name> <year_created>1988</year_created> <no_of_championships>3</no_of_championships> <stadium_name>Miami-Dade Arena</stadium_name>
+</team>
+<stadium>
+<stadium_name>Scotiabank Arena</stadium_name> <stadium_address>40 Bay Street</stadium_address>
+</stadium> <stadium>
+
+ <stadium_name>United Center</stadium_name>
+<stadium_address>1901 West Madison Street</stadium_address> </stadium>
+<stadium stadium_name="Crypto.com Arena"> <stadium_name>Crypto.com Arena</stadium_name> <stadium_address>1111 South Figueroa Street</stadium_address>
+</stadium>
+<stadium>
+<stadium_name>TD Garden</stadium_name> <stadium_address>100 Legends Way</stadium_address>
+</stadium>
+<stadium>
+<stadium_name>Miami-Dade Arena</stadium_name> <stadium_address>601 Biscayne Boulevard</stadium_address>
+</stadium>
+<staff>
+<staffID>1</staffID>
+<staff_name>Joe Lacob</staff_name> <staff_type>Owner</staff_type> <team_name>Golden State Warriors</team_name>
+</staff>
+<staff>
+<staffID>2</staffID>
+<staff_name>Bob Myers</staff_name> <staff_type>General Manager</staff_type> <team_name>Golden State Warriors</team_name>
+</staff>
+<staff>
+<staffID>3</staffID>
+<staff_name>Steve Kerr</staff_name> <staff_type>Head Coach</staff_type> <team_name>Golden State Warriors</team_name>
+</staff>
+<staff>
+<staffID>4</staffID>
+<staff_name>Maple Leafs Sports and Entertainment</staff_name> <staff_type>Owner</staff_type>
+
+ <team_name>Toronto Raptors</team_name> </staff>
+<staff>
+<staffID>5</staffID>
+<staff_name>Masai Ujiri</staff_name> <staff_type>General Manager</staff_type> <team_name>Toronto Raptors</team_name>
+</staff>
+<position> <position_name>Center</position_name> <position_number>5</position_number>
+</position>
+<position>
+<position_name>Shooting Guard</position_name> <position_number>2</position_number>
+</position>
+<position>
+<position_name>Point Guard</position_name> <position_number>1</position_number>
+</position>
+<position>
+<position_name>Small Forward</position_name> <position_number>3</position_number>
+</position>
+<position>
+<position_name>Power Forward</position_name> <position_number>4</position_number>
+</position>
+<gamestats>
+<statsID>1</statsID>
+<FG>47</FG> <points_per_game>24</points_per_game> <rebounds_per_game>7</rebounds_per_game> <assists_per_game>5</assists_per_game> <minutes_played>37</minutes_played> <FT>77</FT>
+</gamestats>
+
+<gamestats>
+<statsID>2</statsID>
+<FG>39</FG> <points_per_game>11</points_per_game> <rebounds_per_game>4</rebounds_per_game> <assists_per_game>5</assists_per_game> <minutes_played>33</minutes_played> <FT>85</FT>
+</gamestats>
+<gamestats>
+<statsID>3</statsID>
+<FG>50</FG> <points_per_game>25</points_per_game> <rebounds_per_game>4</rebounds_per_game> <assists_per_game>5</assists_per_game> <minutes_played>36</minutes_played> <FT>86</FT>
+</gamestats>
+<gamestats>
+<statsID>4</statsID>
+<FG>50</FG> <points_per_game>25</points_per_game> <rebounds_per_game>8</rebounds_per_game> <assists_per_game>6</assists_per_game> <minutes_played>36</minutes_played> <FT>75</FT>
+</gamestats>
+<gamestats>
+<statsID>5</statsID>
+<FG>45</FG> <points_per_game>15</points_per_game> <rebounds_per_game>7</rebounds_per_game> <assists_per_game>5</assists_per_game> <minutes_played>35</minutes_played> <FT>77</FT>
+</gamestats> </NBAplayerData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:template match="/"> <html>
+<body>
+<h2>General managers of NBA teams</h2> <table border="1">
+<tr bgcolor="#9acd32">
+<th style="text-align:left">staffID</th>
+<th style="text-align:left">staff_name</th> <th style="text-align:left">staff_type</th> <th style="text-align:left">team_name</th>
+</tr>
+<xsl:for-each select="NBAplayerData/staff[staff_type='General Manager']">
+<tr>
+<xsl:variable name="staffID" select="staffID" /> <xsl:variable name="staff_name" select="staff_name" /> <xsl:variable name="staff_type" select="staff_type" /> <xsl:variable name="team_name" select="team_name" /> <td>
+<xsl:value-of select="staffID" /> </td>
+<td>
+<xsl:value-of select="staff_name" />
+</td> <td>
+<xsl:value-of select="staff_type" /> </td>
+ 
+<td>
+<xsl:value-of select="team_name" />
+</td> </tr>
+</xsl:for-each> </table>
+</body> </html>
+</xsl:template> </xsl:stylesheet>
+

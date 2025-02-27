@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:template match="/"> <html>
+<body>
+<h2>Players who have over 3 years of experience</h2> <table border="1">
+<tr bgcolor="#9acd32">
+<th style="text-align:left">playerID</th> <th style="text-align:left">first_name</th> <th style="text-align:left">last_name</th> <th style="text-align:left">experience</th>
+</tr>
+<xsl:for-each select="NBAplayerData/player[experience>3]">
+<tr>
+<xsl:variable name="playerID" select="playerID" /> <xsl:variable name="first_name" select="first_name" /> <xsl:variable name="last_name" select="last_name" /> <xsl:variable name="age" select="experience" />
+<td>
+<xsl:value-of select="playerID" />
+</td> <td>
+<xsl:value-of select="first_name" /> </td>
+<td>
+<xsl:value-of select="last_name" />
+</td> <td>
+<xsl:value-of select="experience" /> </td>
+</tr> </xsl:for-each>
+</table> </body>
+</html> </xsl:template>
+</xsl:stylesheet>
+
+

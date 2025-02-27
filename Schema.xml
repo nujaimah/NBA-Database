@@ -1,0 +1,98 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="NBAplayerData">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="player" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="playerID" type="xs:integer"/>
+                            <xs:element name="first_name" type="xs:string"/>
+                            <xs:element name="last_name" type="xs:string"/>
+                            <xs:element name="birth_place" type="xs:string"/>
+                            <xs:element name="birthday" type="xs:string"/>
+                            <xs:element name="height" type="xs:string"/>
+                            <xs:element name="age" type="xs:integer"/>
+                            <xs:element name="experience" type="xs:integer"/>
+                            <xs:element name="college_attended" type="xs:string"/>
+                            <xs:element name="statsID" type="xs:integer"/>
+                            <xs:element name="team_name" type="xs:string"/>
+                            <xs:element name="position_name" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="playerID" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="team" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="team_name" type="xs:string"/>
+                            <xs:element name="year_created" type="xs:integer"/>
+                            <xs:element name="no_of_championships" type="xs:integer"/>
+                            <xs:element name="stadium_name" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:key name="team_pk">
+                        <xs:selector xpath="team"/>
+                        <xs:field xpath="team_name"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="stadium" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="stadium_name" type="xs:string"/>
+                            <xs:element name="stadium_address" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:key name="stadium_pk">
+                        <xs:selector xpath="stadium"/>
+                        <xs:field xpath="stadium_name"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="staff" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="staffID" type="xs:integer"/>
+                            <xs:element name="staff_name" type="xs:string"/>
+                            <xs:element name="staff_type" type="xs:string"/>
+                            <xs:element name="team_name" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="position" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="position_name" type="xs:string"/>
+                            <xs:element name="position_number" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:key name="position_pk">
+                        <xs:selector xpath="position"/>
+                        <xs:field xpath="position_name"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="gamestats" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="statsID" type="xs:integer"/>
+                            <xs:element name="FG" type="xs:integer"/>
+                            <xs:element name="points_per_game" type="xs:integer"/>
+                            <xs:element name="rebounds_per_game" type="xs:integer"/>
+                            <xs:element name="assists_per_game" type="xs:integer"/>
+                            <xs:element name="minutes_played" type="xs:integer"/>
+                            <xs:element name="FT" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:key name="gamestats_pk">
+                        <xs:selector xpath="gamestats"/>
+                        <xs:field xpath="statsID"/>
+                    </xs:key>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

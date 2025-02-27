@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:template match="/"> <html>
+<body>
+<h2>Teams that have won more than 2 Championships</h2> <table border="1">
+<tr bgcolor="#9acd32">
+<th style="text-align:left">team_name</th>
+<th style="text-align:left">no_of_championships</th>
+</tr>
+ 
+<xsl:for-each select="NBAplayerData/team[no_of_championships>2]"> <tr>
+<xsl:variable name="team_name" select="team_name" />
+<xsl:variable name="no_of_championships" select="no_of_championships" />
+<td>
+<xsl:value-of select="team_name" />
+</td> <td>
+<xsl:value-of select="no_of_championships" /> </td>
+</tr> </xsl:for-each>
+</table> </body>
+</html> </xsl:template>
+</xsl:stylesheet>
+
