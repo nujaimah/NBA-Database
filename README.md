@@ -7,8 +7,8 @@ ER Diagram
 
 Queries
 
-Query 1: List of NBA players who have over 3 years of experience playing in the NBA
-Query 2: List of the general managers of NBA teams
-Query 3: List of NBA players who are 6 ft. 8
-Query 4: List of NBA teams that have won more than 2 championships
-Query 5: List of NBA teams that were created before 1950
+Query 1: List of NBA players who have over 3 years of experience playing in the NBA\
+Query 2: List of the general managers of NBA teams\
+Query 3: List of NBA players who are 6 ft. 8\
+Query 4: List of NBA teams that have won more than 2 championships\
+Query 5: List of NBA teams that were created before 1950\
