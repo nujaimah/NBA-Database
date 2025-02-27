@@ -1,2 +1,2 @@
 # NBA-Database
-Simple NBA Database build using SQLite, XML, XSLT, and Java
+Simple database on NBA player data build using SQLite, XML, XSLT, and Java
